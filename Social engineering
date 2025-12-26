@@ -1,0 +1,39 @@
+Social Engineering & Human Attack Vectors – SOC Analysis
+
+### Scenario ###
+An organization experienced multiple security incidents caused by the weakest point:
+human behavior, including phishing, poor password practices, and lack
+of security awareness.
+
+
+### Objective ###
+Identify how human factors can be exploited as attack vectors and
+define detection, prevention, and response strategies from a SOC
+perspective.
+
+### Attack Vectors Identified ###
+An employee downloaded software from an untrusted freeware hosting site.
+Although the software appeared legitimate (7-Zip), it contained a
+malicious executable compressed within a ZIP archive in an attempt
+to evade antivirus detection.
+
+The antivirus successfully detected the malicious file, blocked its
+execution, and placed it under quarantine for further investigation.
+
+### Tools used ###
+- Procmon
+- PEstudio
+
+### Recommendations ###
+- Enforce application control policies to prevent users from installing
+  unauthorized software from untrusted sources.
+- Implement application allow-listing for approved software.
+- Conduct regular security awareness training focused on software
+  downloads and social engineering risks.
+- Enhance endpoint protection by monitoring archive-based malware
+  delivery techniques.
+
+### Conclusion ###
+Human behavior remains one of the most exploited attack vectors.
+SOC teams must combine technical controls with user awareness and
+continuous monitoring.
